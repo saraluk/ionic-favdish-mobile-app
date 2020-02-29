@@ -1,1 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins|Unna&display=swap");
+header-container {
+  background-color: var(--my-color-darkblue);
+}
 
+.logo {
+  font-family: var(--ion-font-family);
+  font-size: 20px;
+  color: var(--my-color-pink);
+}
+
+.greeting-user {
+  font-size: 26px;
+  color: var(--my-color-white);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: var(--my-font-family-important);
+}
+
+.cuisine-container {
+  padding-top: 10px;
+}
+
+.bar {
+  background-color: var(--my-color-pink);
+  width: 5px;
+  margin-right: 10px;
+}
+
+.cuisine-label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+ion-slide {
+  width: 70% !important;
+}
+
+.dish-card {
+  height: 220px;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  text-align: start;
+}
+
+ion-card-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--my-color-white);
+}
+
+ion-card-subtitle {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--my-color-pink);
+}
+
+.card-content {
+  padding-top: 115px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+
+.more-button {
+  --background: transparent;
+  --background-activated: transparent;
+  color: var(--my-color-white);
+}
+
+.more-icon {
+  font-size: 25px;
+}

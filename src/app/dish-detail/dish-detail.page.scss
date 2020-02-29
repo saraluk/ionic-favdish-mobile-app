@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins|Unna&display=swap");
+.image-header {
+  height: 65vh;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.close-button {
+  margin-top: 15px;
+  font-size: 24px;
+}
+
+.horizontal-bar {
+  margin-top: 38vh;
+  width: 80px;
+  height: 4px;
+  background-color: var(--my-color-white);
+}
+
+.detail {
+  margin-top: 10px;
+}
+
+h3 {
+  color: var(--my-color-white);
+  font-weight: bold;
+}
+h5 {
+  margin: 0px;
+  margin-top: 10px;
+  color: #0c1018;
+  font-weight: bold;
+}
+
+span ion-icon {
+  font-size: 35px;
+  color: var(--my-color-pink);
+  margin-right: 10px;
+}
+
+h6 {
+  margin: 0px;
+  margin-top: 15px;
+  color: var(--my-color-darkblue);
+  font-weight: bold;
+}
+
+p {
+  margin: 0px;
+  margin-top: 5px;
+}

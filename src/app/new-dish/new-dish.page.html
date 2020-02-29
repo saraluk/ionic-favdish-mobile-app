@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>New Fav Dish</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="ion-padding-horizontal">
+    <ion-row *ngIf="photos.length == 0">
+      <ion-card class="dish-image ion-no-padding"> </ion-card>
+    </ion-row>
+    <ion-row *ngIf="photos.length != 0">
+      <ion-card class="ion-no-padding">
+        <img src="{{ photos[0] }}" />
+      </ion-card>
+    </ion-row>
+    <ion-row class="ion-no-padding">
+      <ion-button fill="clear" color="medium" (click)="onClickTakePhoto()"
+        ><ion-icon name="camera"></ion-icon>Take a Photo</ion-button
+      >
+      <ion-button fill="clear" color="medium" (click)="onClickGetPhoto()"
+        ><ion-icon name="image"></ion-icon>Select From Album</ion-button
+      >
+    </ion-row>
+  </ion-grid>
+  <ion-list class="ion-padding-horizontal">
+    <ion-item>
+      <ion-label position="stacked"
+        >Dish Name<span class="asterisk">*</span></ion-label
+      >
+      <ion-input [(ngModel)]="dishName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked"
+        >Cuisine<span class="asterisk">*</span></ion-label
+      >
+      <ion-select placeholder="Select One" [(ngModel)]="cuisine">
+        <ion-select-option value="American">American</ion-select-option>
+        <ion-select-option value="Caribbean">Caribbean</ion-select-option>
+        <ion-select-option value="Chinese">Chinese</ion-select-option>
+        <ion-select-option value="French">French</ion-select-option>
+        <ion-select-option value="Italian">Italian</ion-select-option>
+        <ion-select-option value="Japanese">Japanese</ion-select-option>
+        <ion-select-option value="Korean">Korean</ion-select-option>
+        <ion-select-option value="Mediterranean"
+          >Mediterranean</ion-select-option
+        >
+        <ion-select-option value="Mexican">Mexican</ion-select-option>
+        <ion-select-option value="Thai">Thai</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Restaurant</ion-label>
+      <ion-input [(ngModel)]="restaurantName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Description</ion-label>
+      <ion-textarea
+        [(ngModel)]="description"
+        rows="4"
+        placeholder="describe more about the dish here..."
+      ></ion-textarea>
+    </ion-item>
+  </ion-list>
+  <ion-grid>
+    <ion-row class="ion-justify-content-end">
+      <ion-button routerLink="" (click)="onClickSave()">Save</ion-button>
+      <ion-button routerLink="" (click)="onClickCancel()">Cancel</ion-button>
+    </ion-row>
+  </ion-grid>
+</ion-content>
